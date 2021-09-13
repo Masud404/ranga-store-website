@@ -1,7 +1,20 @@
+
 body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+/* ------------------header title----------------- */
+.header-title{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  color: rgb(161, 15, 161);
+}
+/* ---------------------header title span ------------------*/
+.title-span{
+  color: rgb(240, 126, 149);
+}
+/* --------------------input search field ----------------------*/
 .search-field {
   border: none;
   border-radius: 50px;
@@ -13,20 +26,23 @@ body {
   border: none;
 }
 .search-box {
-  border: 1px solid rgb(3, 118, 211);
-  width: 281px;
+  border: 2px solid rgb(3, 118, 211);
+  width: 300px;
   border-radius: 5px;
   margin: auto;
   margin-top: 50px;
-  border-right: none;
+  margin-bottom: 50px;
 }
+/*---------------------- search button---------------------- */
 .search-button {
   padding: 10px 50px;
-  border-radius: 25px;
-  margin-left: 20px;
+  border-radius: 20px;
+  margin-left: 41px;
 }
+/* ------------------all products card------------------------- */
 #all-products {
   display: grid;
+  grid-gap: 30px;
   grid-template-columns: repeat(3, 1fr);
   /* border: 1px solid black; */
   text-align: center;
@@ -34,7 +50,16 @@ body {
   margin: auto;
   align-items: center;
   justify-content: center;
+  padding: 15px;
 }
+.single-product{
+  background-color: rgba(166, 180, 197, 0.911);
+  width: 300px;
+  height: 550px;
+  padding: 10;
+  border-radius: 10px;
+}
+/*------------------ single product----------------------- */
 .single-product {
   padding: 10px;
   transition: 0.6s;
@@ -44,12 +69,15 @@ body {
   border-radius: 10px;
   border: 1px solid cyan;
 }
+/*--------------------- product image -----------------------*/
 .product-image {
   width: 150px;
   height: 150px;
 }
+/*------------------------------------- cart------------------------ */
 .cart {
   width: 350px;
+  background-color: rgb(232, 240, 224);
   /* border: 1px solid green; */
   padding: 10px;
   box-shadow: 10px 10px 20px gray;
@@ -60,6 +88,7 @@ body {
 .cart-main {
   padding-right: 30px;
 }
+/*------------------- meida quary for tab size------------------- */
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;
@@ -78,9 +107,11 @@ body {
     padding-right: 10px;
   }
 }
+/*------------------- meida quary for mobile size------------------- */
 @media only screen and (max-width: 468px) {
   #all-products {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
